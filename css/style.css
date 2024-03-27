@@ -90,12 +90,12 @@ body {
     bottom: 0;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
     border-radius: 0;
-    right: -5px;
+    right: -8px;
     transform: scale(0);
     transform-origin: bottom right;
     transition: transform 0.5s ease;
 }
-.settings:hover .menu {
+.settings.show .menu {
     transform: scale(1);
 }
 .settings .menu li{
@@ -137,6 +137,11 @@ body {
 .popup-box, .popup-box .popup {
     opacity: 0;
     pointer-events: none;
+    transition: all 0.24s ease;
+}
+.popup-box.show, .popup-box .popup {
+    opacity: 1;
+    pointer-events: auto;
 }
 .popup .content {
     background: #fff;
