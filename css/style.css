@@ -19,16 +19,20 @@ body {
 
 .wrapper li {
     background: #fff;
-    height: 300px;
+    height: 350px;
     border-radius: 5px;
     padding: 15px 20px 20px;
 }
 
-.add-box, .icon {
+.add-box, .icon, .bottom-content {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+.add-box {
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
 }
 .add-box .icon {
     height: 78px;
@@ -43,4 +47,71 @@ body {
     color: #88ABFF;
     font-weight: 500;
     margin-top: 20px;
+}
+.note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.note p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.note span {
+    display: block;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #575757;
+}
+
+.note .bottom-content {
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.bottom-content span {
+    color: #6d6d6d;
+    font-size: 14px;
+}
+
+.bottom-content .settings i {
+    color: #6d6d6d;
+    font-size: 15px;
+    cursor: pointer;
+}
+.settings {
+    position: relative;
+}
+.settings .menu {
+    position: absolute;
+    padding: 5px 0;
+    bottom: 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    right: -5px;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+.settings:hover .menu {
+    transform: scale(1);
+}
+.settings .menu li{
+    height: 40px;
+    width: 118px;
+    border-radius: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.menu li:hover {
+    background: #f5f5f5;
+}
+.menu li i {
+    margin-right: 8px;
 }
