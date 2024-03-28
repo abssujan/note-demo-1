@@ -34,7 +34,7 @@ function showNotes(){
         <li class="note">
         <div class="details">
             <p>${note.title}</p>
-            <span>${note.description}</span>
+            <span class="deatails">${note.description}</span>
         </div>
         <div class="bottom-content">
             <span>${note.date}</span>

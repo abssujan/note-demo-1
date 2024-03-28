@@ -129,19 +129,21 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 2;
+    /* z-index: 2; */
     max-width: 400px;
     width: 100%;
     transform: translate(-50%, -50%);
 }
 .popup-box, .popup-box .popup {
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transition: all 0.24s ease;
 }
 .popup-box.show, .popup-box .popup {
     opacity: 1;
     pointer-events: auto;
+    visibility: visible;
 }
 .popup .content {
     background: #fff;
@@ -200,4 +202,9 @@ body {
     background-color: #6a93f8;
     cursor: pointer;
     font-size: 17px;
+}
+
+.deatails {
+    border-top: 1px solid #6d6d6d;
+    padding-top: 1rem;
 }
